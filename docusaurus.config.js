@@ -78,7 +78,6 @@ const config = {
             label: 'Doc',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/zhengwe/zhengwe.com',
             label: 'GitHub',
