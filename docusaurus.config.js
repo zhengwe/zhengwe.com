@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'zhengwei',
   tagline: 'You are the only thing I want to know',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://zhengwe.com',
@@ -24,6 +24,7 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -35,22 +36,14 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: 'Recent Posts',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -63,71 +56,73 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
+
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'zheng wei',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'zw Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Doc',
-          },
+          {to: '/docs', label: 'Docs', position: 'left'}, 
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/zhengwe/zhengwe.com',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Notes',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Kubernetes',
+                to: '/docs',
               },
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
+            title: 'Dream',
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
-              },
+                to: '/Blog'
+              }
+            ]
+          },
+          {
+            title: 'Snow',
+            items: [
+              {
+                label: 'Blog',
+                to: '/Blog'
+              }
+            ]
+          },
+          {
+            title: 'Social',
+            items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/zhengwe/zhengwe.com',
+              },
+              {
+                label: 'Bilibili',
+                href: 'https://space.bilibili.com/101570633',
               },
             ],
           },
         ],
+        logo: {
+          alt: 'Buttom Logo',
+          src: 'img/favicon.svg'
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Innocence`,
       },
       prism: {
