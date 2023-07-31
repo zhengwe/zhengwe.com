@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzhengwe=self.webpackChunkzhengwe||[]).push([[205],{3288:e=>{e.exports=JSON.parse('{"title":"kubernetes","slug":"/category/kubernetes","permalink":"/docs/category/kubernetes","navigation":{"next":{"title":"Kubernetes","permalink":"/docs/"}}}')}}]);
