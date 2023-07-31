@@ -1,6 +1,6 @@
 ---
 id: kubernetes
-title: Kubernetes
+title: kubernetes
 slug: /
 ---
 
