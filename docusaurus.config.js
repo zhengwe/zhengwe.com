@@ -41,8 +41,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateTime: false,
         },
         blog: {
+          showReadingTime: true,
           blogSidebarTitle: 'Recent Posts',
         },
         theme: {

@@ -1,10 +1,4 @@
----
-id: kubernetes
-title: Kubernetes
-slug: /
----
-
-# Kuberentes
+# Golang
 
 ```mdx-code-block
 
