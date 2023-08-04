@@ -41,11 +41,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: false,
+          showLastUpdateTime: false         
         },
         blog: {
+          path: './blog',
+          routeBasePath: '/',
           showReadingTime: true,
-          blogSidebarTitle: 'Recent Posts',
+          blogSidebarCount: 10,
+          blogSidebarTitle: 'Recent Posts'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -56,7 +59,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    ({      
       // Replace with your project's social card
       docs: {
         sidebar: {
@@ -67,14 +70,19 @@ const config = {
 
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
+        hideOnScroll: true,
         title: 'zheng wei',
         logo: {
-          alt: 'zw Logo',
+          alt: 'zLogo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo.svg',
         },
         items: [
-          {to: '/docs', label: 'Docs', position: 'left'}, 
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs',
+            label: 'Docs',
+            position: 'left',
+          }, 
         ],
       },
       footer: {
@@ -93,8 +101,8 @@ const config = {
             title: 'Dream',
             items: [
               {
-                label: 'Blog',
-                to: '/Blog'
+                label: 'Docs',
+                to: '/docs'
               }
             ]
           },
@@ -102,8 +110,8 @@ const config = {
             title: 'Snow',
             items: [
               {
-                label: 'Blog',
-                to: '/Blog'
+                label: 'Docs',
+                to: '/docs'
               }
             ]
           },
