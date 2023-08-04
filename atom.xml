@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhengwe.com/</id>
+    <title>zhengwei Blog</title>
+    <updated>2021-08-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhengwe.com/"/>
+    <subtitle>zhengwei Blog</subtitle>
+    <icon>https://zhengwe.com/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Hello]]></title>
+        <id>https://zhengwe.com/hello</id>
+        <link href="https://zhengwe.com/hello"/>
+        <updated>2021-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Simply add Markdown files (or folders) to the blog directory.]]></summary>
+        <content type="html"><![CDATA[<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><p>A blog post folder can be convenient to co-locate blog post images:</p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+        <author>
+            <name>Innocence</name>
+            <uri>https://github.com/zhengwe.com</uri>
+        </author>
+        <category label="hello" term="hello"/>
+    </entry>
+</feed>
