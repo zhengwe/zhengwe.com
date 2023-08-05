@@ -49,15 +49,15 @@ func main () {
 匿名变量用一个下划线`_`表示，用于忽略某个值。匿名变量不占用命名空间，不分配内存，可以重复声明。
 
 ## 常量
-常量是不变的值，用于定义程序运行期间不改变的值，**常量在定义时必须赋值**。
+常量是不变的值，用于定义程序运行期间不改变的值，常量通常为大写，**常量在定义时必须赋值**。
 ```golang
-const z = 200
-const w = 500
+const HTTP_STATUS_OK = 200
+const HTTP_STATUS_BADGATEWAY = 500
 
 // 多个声明
 const (
-    z = 200
-    w = 500
+    HTTP_STATUS_OK = 200
+    HTTP_STATUS_BADGATEWAY = 500
 )
 ```
 
