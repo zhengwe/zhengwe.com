@@ -69,6 +69,10 @@ www
 `
 ```
 
+## byte & rune
+uint8类型，也是byte型，表示一个ASCII字符
+rune类型，表示一个UTF-8字符
+
 ## 类型转换
 Go语言只有强制类型转换，如下:
 ```golang
