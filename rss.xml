@@ -4,18 +4,18 @@
         <title>zhengwei Blog</title>
         <link>https://zhengwe.com/</link>
         <description>zhengwei Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Hello]]></title>
-            <link>https://zhengwe.com/hello</link>
-            <guid>https://zhengwe.com/hello</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Simply add Markdown files (or folders) to the blog directory.]]></description>
-            <content:encoded><![CDATA[<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><p>A blog post folder can be convenient to co-locate blog post images:</p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
-            <category>hello</category>
+            <title><![CDATA[手写的从前]]></title>
+            <link>https://zhengwe.com/promise</link>
+            <guid>https://zhengwe.com/promise</guid>
+            <pubDate>Wed, 26 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[微風需要竹林 溪流需要蜻蜓]]></description>
+            <content:encoded><![CDATA[<p>微風需要竹林 溪流需要蜻蜓</p><p>鄉愁般的離開 需要片片浮萍</p><p>記得那年的雨季 回憶裡特安靜</p><p>哭過後的決定 是否還能進行</p><p>我傻傻等待 傻傻等春暖花開</p><p>等終等於等明等白 等愛情回來</p><p>青春屬於表白 陽光屬於窗台</p><p>而我想我屬於 一個擁有你的未來</p><p>紙上的彩虹 用素描畫的鐘</p><p>我還在修改 回憶之中你的笑容</p><p>該怎麼去形容 為思念醞釀的痛</p><p>夜空霓虹 都是我不要的繁榮</p><p>或許去趟沙灘 或許去看看夕陽</p><p>或許任何一個可以想心事的地方</p><p>情緒在咖啡館 被調成一篇文章</p><p>徹底愛上 你如詩一般透明的淚光</p>]]></content:encoded>
+            <category>innocence</category>
         </item>
     </channel>
 </rss>
