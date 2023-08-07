@@ -98,16 +98,7 @@ const config = {
             ],
           },
           {
-            title: 'Dream',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs'
-              }
-            ]
-          },
-          {
-            title: 'Snow',
+            title: '1110',
             items: [
               {
                 label: 'Docs',
