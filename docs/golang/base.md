@@ -85,3 +85,79 @@ T(表达式)   // T表示要转换的类型
 - Print：一次输出多个值，中间没有空格，不会自动换行
 - Printf：格式化输出
 - Sprintf：格式化输出，不打印返回值，常用于变量拼接、赋值
+
+## 数组
+数组在声明时就确定，使用时可以修改，数组大小不能变化，数组是值类型
+```golang
+var a [3]int  //数组长度一旦定义，不能改变
+var b = [2]int{1, 2}  //初始化指定值
+var c = [...]int{1, 2, 3}  //自动推导数组长度
+```
+
+### 数组遍历
+```golang
+var a = [...]string{"golang", "java", "rust"}
+//方法一：for循环遍历
+for i := 0; i < len(a); i++ {
+    fmt.Println(a[i])
+}
+
+//方法二：for range
+for index, value := range a {
+    fmt.Println(index, value)
+}
+```
+
+### 多维数组
+```golang
+a := [3][2]string {
+    {"golang", "rust"},
+    {"vue", "react"},
+    {"k8s", "p8s"},
+}
+fmt.Println(a)
+fmt.Println(a[2][1]) //支持索引取值
+
+for _, value := range a {
+    for _, value1 := range value {
+        fmt.Printf("%s\t", value1)
+    }
+    fmt.Println()
+}
+```
+
+- **数组支持"=="、"!="操作符，因为内存是初始化过**
+
+- **[n]*T表示指针数组，*[n]T表示数组指针**
+
+## 切片
+切片是一个拥有相同类型元素的可变长度的序列，基于数组类型做的一层封装，支持自动扩缩容，是引用类型
+
+### 切片的定义
+```golang
+var a []string  //声明字符串切片
+fmt.Println(a == nil)  //[] true
+var b = []int  //声明整型切片并初始化
+fmt.Println(b == nil)  //[] false
+```
+
+- 切片之间不能比较，不能使用`==`来判断二个切片是否含有相等元素，可以和`nil`比较，一个`nil`值的切片没有底层数组，长度和容量都是0
+
+### append
+append()可以为切片动态添加元素
+```golang
+var a []int  //零值切片可以在append()函数直接使用，无需初始化
+a = append(a, 1)  //添加一个元素
+a = append(a, 2, 3, 4)  //添加多个元素
+var s = []int{5, 6, 7}
+a = append(a, s...)  //添加切片中的元素
+```
+
+### 删除
+go语言中没有删除切片元素的专用方法，可以使用切片本身的特性来删除元素
+```golang
+var a = []int{1, 2, 3, 4, 5, 6, 7}
+a = append(a[:2], a[5:]...)
+```
+
+## Map
