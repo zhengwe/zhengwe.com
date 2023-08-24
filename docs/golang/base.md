@@ -161,3 +161,27 @@ a = append(a[:2], a[5:]...)
 ```
 
 ## Map
+map是一种无序的基于`key-value`的数据结构，map是引用类型，必须初始化才能使用
+
+### 定义
+```golang
+var a = make(map[string]int, 10)
+a["go"] = 10
+
+// 判断map键是否存在
+value, ok := a["go"]
+if ok {
+    fmt.Println(value)
+    } else {
+        fmt.Println("false")
+    }
+```
+
+### delete函数
+使用`delete()`内建函数从map中删除一组键值对
+```golang
+delete(map, key)
+// map表示要删除键值对的map
+// key表示要删除键值对的key
+```
+
