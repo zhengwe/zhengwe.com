@@ -35,6 +35,7 @@ $ USE_SSH=true yarn deploy
 Not using SSH:
 
 ```
+$ GIT_USER=<Your GitHub username> npm run deploy
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
