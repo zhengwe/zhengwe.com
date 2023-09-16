@@ -1,6 +1,6 @@
 ---
 slug: kernel
-title: centos内核升级
+title: Centos内核升级
 authors: [innocence]
 tags: [linux]
 ---
@@ -15,7 +15,13 @@ rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
 ### 查看可安装的软件包
 ```bash
 # ML 版本为最新版本，TL 版本为稳定版本
-yum --enablerepo="elrepo-kernel" list --showduplicates | sort -r | grep kernel-lt.x86_64
+yum --enablerepo="elrepo-kernel" list --showduplicates | sort -r | grep kernel-ml.x86_64
+
+# 安装 ML 版本
+yum --enablerepo=elrepo-kernel install  kernel-ml-devel kernel-ml -y
+
+# 安装 LT 版本
+yum --enablerepo=elrepo-kernel install kernel-lt-devel kernel-lt -y
 ```
 
 ### 查看现有内核启动顺序
