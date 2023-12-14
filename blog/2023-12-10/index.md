@@ -137,6 +137,32 @@ if ip_blacklist:get(ip) then
 end
 ```
 
+### Websocket
+```bash
+map $http_upgrade $connection_upgrade { 
+    default upgrade; 
+    '' close; 
+} 
+upstream ws_backend{ 
+    server IP:Port; 
+    keepalive 1000; 
+}
+server { 
+    listen 80; 
+    location /{ 
+        proxy_http_version 1.1; 
+        proxy_pass http://ws_backend; 
+        proxy_redirect off; 
+        proxy_set_header Host $host; 
+        proxy_set_header X-Real-IP $remote_addr; 
+        proxy_read_timeout 3600s; 
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; 
+        proxy_set_header Upgrade $http_upgrade; 
+        proxy_set_header Connection $connection_upgrade; 
+    } 
+}
+```
+
 ### nginx 的转发规则
 ```bash
 location [=|~|~*|^~] /uri/ { ... }
