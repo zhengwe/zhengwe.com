@@ -180,6 +180,7 @@ user  nginx;
 worker_processes  auto;
 worker_rlimit_nofile  65535;
 
+error_log  /data/logs/nginx/error.log notice;
 pid        /var/run/nginx.pid;
 events {
     worker_connections  65535;
@@ -212,8 +213,7 @@ http {
         '"RequestTime":"$request_time",'
     '}';
 
-    access_log /data/logs/access.log  main;
-    error_log  /data/logs/error.log error;
+    access_log /data/logs/nginx/access.log main;
 
     access_log                      off;
     server_tokens                   off;
