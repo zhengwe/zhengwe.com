@@ -69,7 +69,6 @@ metadata:
   name: example-tls
 spec:
   secretName: example-com-tls
-  commonName: example.com
   dnsNames:
   - example.com
   - "*.example.com"
@@ -86,7 +85,6 @@ metadata:
   name: app
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
-    cert-manager.io/cluster-issuer: "letsencrypt"  # 跟 ClusterIssuer 一致
 spec:
   rules:
   - host: app.example.com
