@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzhengwe=self.webpackChunkzhengwe||[]).push([[342],{5779:e=>{e.exports=JSON.parse('{"title":"Golang","slug":"/category/golang","permalink":"/docs/category/golang","navigation":{"previous":{"title":"\u57fa\u7840","permalink":"/docs/kubernetes/base"},"next":{"title":"\u57fa\u7840\u8bed\u6cd5","permalink":"/docs/golang/base"}}}')}}]);

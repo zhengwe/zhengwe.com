@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzhengwe=self.webpackChunkzhengwe||[]).push([[688],{6898:e=>{e.exports=JSON.parse('{"label":"istio","permalink":"/tags/istio","allTagsPath":"/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzhengwe=self.webpackChunkzhengwe||[]).push([[640],{8597:e=>{e.exports=JSON.parse('{"label":"goblin","permalink":"/tags/goblin","allTagsPath":"/tags","count":1}')}}]);

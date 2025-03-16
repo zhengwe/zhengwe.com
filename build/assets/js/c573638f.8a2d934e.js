@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzhengwe=self.webpackChunkzhengwe||[]).push([[964],{8866:e=>{e.exports=JSON.parse('[{"label":"kubernetes","permalink":"/tags/kubernetes","count":2},{"label":"linux","permalink":"/tags/linux","count":3},{"label":"istio","permalink":"/tags/istio","count":1},{"label":"goblin","permalink":"/tags/goblin","count":1}]')}}]);
