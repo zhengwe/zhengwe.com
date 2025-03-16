@@ -1,7 +1,7 @@
 ---
 slug: etcd
 title: Etcd 备份与恢复
-authors: [innocence]
+authors: [goblin]
 tags: [kubernetes]
 ---
 

@@ -1,7 +1,7 @@
 ---
 slug: nginx
 title: Nginx 常用配置
-authors: [innocence]
+authors: [goblin]
 tags: [linux]
 ---
 

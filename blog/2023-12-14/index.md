@@ -1,7 +1,7 @@
 ---
 slug: mysql
 title: Mysql 常用语句
-authors: [innocence]
+authors: [goblin]
 tags: [linux]
 ---
 

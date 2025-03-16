@@ -124,7 +124,7 @@ const config = {
           alt: 'Buttom Logo',
           src: 'img/favicon.svg'
         },
-        copyright: `Copyright © ${new Date().getFullYear()} Innocence`,
+        copyright: `Copyright © ${new Date().getFullYear()} goblin`,
       },
       prism: {
         theme: lightCodeTheme,

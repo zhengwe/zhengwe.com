@@ -1,7 +1,7 @@
 ---
 slug: istio
 title: Istio 返回 426 状态码
-authors: [innocence]
+authors: [goblin]
 tags: [istio]
 ---
 

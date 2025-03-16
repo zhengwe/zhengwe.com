@@ -1,7 +1,7 @@
 ---
 slug: kernel
 title: Centos内核升级
-authors: [innocence]
+authors: [goblin]
 tags: [linux]
 ---
 
