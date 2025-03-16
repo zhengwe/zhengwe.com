@@ -5,13 +5,13 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 ### Installation
 
 ```
-$ yarn
+$ npm
 ```
 
 ### Local Development
 
 ```
-$ yarn start
+$ npm install
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,12 +19,21 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
-$ yarn build
+$ npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ### Deployment
+
+Using HTTPS:
+
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+
+```
+$ GIT_USER=zhengwe npm run deploy
+$ Password: YOUR-PERSONAL-ACCESS-TOKEN
+```
 
 Using SSH:
 
