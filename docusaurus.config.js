@@ -46,8 +46,6 @@ const config = {
         blog: {
           path: 'blog',
           routeBasePath: '/',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: false,
           showReadingTime: true,
           blogSidebarCount: 10,
           blogSidebarTitle: 'Recent Posts'
