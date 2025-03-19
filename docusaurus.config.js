@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'zhengwei',
+  title: 'goblin',
   tagline: 'You are the only thing I want to know',
   favicon: 'img/favicon.svg',
 
@@ -44,8 +44,10 @@ const config = {
           showLastUpdateTime: false         
         },
         blog: {
-          path: './blog',
+          path: 'blog',
           routeBasePath: '/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: false,
           showReadingTime: true,
           blogSidebarCount: 10,
           blogSidebarTitle: 'Recent Posts'
